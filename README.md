@@ -81,7 +81,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://chaseknis.github.io/second_capstone_Js/dist/)
+- [Live Demo Link](https://chaseknis.github.io/third_capstone_react/dist/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -107,7 +107,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-gh repo clone Chaseknis/second_capstone_Js
+gh repo clone Chaseknis/third_capstone_react
 ```
 
 ### Install
@@ -117,7 +117,7 @@ To obtain a copy of this repository, clone it to your desired folder:
 Commands: 
 
 ```sh
-  gh repo clone Chaseknis/second_capstone_Js
+  gh repo clone Chaseknis/third_capstone_react
   cd movie_app
   npm install -y
 ```
@@ -188,7 +188,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Chaseknis/second_capstone_Js/issues).
+Feel free to check the [issues page](https://github.com/Chaseknis/third_capstone_react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
