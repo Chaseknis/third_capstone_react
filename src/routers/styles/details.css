@@ -1,0 +1,99 @@
+.details_container {
+  width: 100%;
+  height: 94vh;
+
+  /* margin-top: -10px; */
+  background-image: linear-gradient(-25deg, rgba(47, 46, 45, 0.588) 0%, rgba(101, 100, 100, 0.634) 100%), url(https://media.wired.com/photos/62ad060183fe550206add755/master/w_2560%2Cc_limit/2022-Weather-Forecast-Science-GettyImages-1235749180.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details_wrapper {
+  padding: 0 10px;
+}
+
+.details_top_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-start;
+  padding: 0.5rem;
+  background-image: linear-gradient(-25deg, #e26846 0%, #ef8365 100%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
+}
+
+.details_image_container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.details_image_container h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.details_image_container img {
+  width: 40px;
+}
+
+.degrees {
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.details_bottom-wrapper {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  padding-top: 40%;
+  gap: 0.5rem;
+}
+
+.details_card_wrapper {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
+  gap: 0.5rem;
+}
+
+.details_last_items_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  margin-top: 8rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
+  gap: 0.5rem;
+}
+
+.sunrise_sunset_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.suns_wrapper {
+  gap: 0.5rem;
+}
+
+.last_details_wrapper {
+  gap: 1rem;
+}
+
+.sunrise_sunset_wrapper p,
+.details_last_items_wrapper h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

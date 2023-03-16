@@ -9,7 +9,13 @@ main {
 
 .header_wrapper {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-image: linear-gradient(-25deg, rgba(226, 104, 70, 0.588) 0%, rgba(239, 131, 101, 0.634) 100%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_fVg_3GbTo4q3K04hh3zXTOPpMLo9jrncZG8I4LK&s);
+}
+
+.small_title {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .p-r-10 {
@@ -26,18 +32,9 @@ main {
   padding: 10px;
 }
 
-.card:nth-child(2) {
-  background-color: rgba(177, 177, 177, 0.4);
-}
-
-.card:nth-child(3) {
-  background-color: rgba(177, 177, 177, 0.4);
-}
-
-.card:nth-child(6) {
-  background-color: rgba(177, 177, 177, 0.4);
-}
-
+.card:nth-child(2),
+.card:nth-child(3),
+.card:nth-child(6),
 .card:nth-child(7) {
   background-color: rgba(177, 177, 177, 0.4);
 }

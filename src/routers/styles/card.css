@@ -17,3 +17,7 @@
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+.card_image_wrapper img {
+  width: 50px;
+}
