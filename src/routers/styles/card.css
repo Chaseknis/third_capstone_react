@@ -1,0 +1,19 @@
+.arrow_wrapper {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow_icon {
+  align-self: center;
+  font-size: 10px;
+}
+
+.card_details_wrapper p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

@@ -1,0 +1,27 @@
+nav {
+  background-color: #e26644;
+}
+
+ul {
+  list-style: none;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.back_button {
+  display: flex;
+  align-items: center;
+}
+
+.white {
+  color: #fff;
+}
+
+.p-r-5 {
+  padding-right: 5px;
+}

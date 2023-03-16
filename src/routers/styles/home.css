@@ -1,0 +1,43 @@
+main {
+  height: 94vh;
+  background-image: linear-gradient(-25deg, #e26846 0%, #ef8365 100%);
+}
+
+.home_wrapper {
+  margin: 0;
+}
+
+.header_wrapper {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.p-r-10 {
+  padding: 0 10px;
+}
+
+.cards_wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+}
+
+.card:nth-child(2) {
+  background-color: rgba(177, 177, 177, 0.4);
+}
+
+.card:nth-child(3) {
+  background-color: rgba(177, 177, 177, 0.4);
+}
+
+.card:nth-child(6) {
+  background-color: rgba(177, 177, 177, 0.4);
+}
+
+.card:nth-child(7) {
+  background-color: rgba(177, 177, 177, 0.4);
+}
