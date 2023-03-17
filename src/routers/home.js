@@ -20,9 +20,15 @@ const cities = [
 const Home = () => {
   const dispatch = useDispatch();
   const weatherData = useSelector(selectCitiesData);
+  const [currentCity, setCurrentCity] = useState('Kinshasa');
 
   useEffect(() => {
-    dispatch(fetchCities(cities));
+    const fetchCitiesData = async () => {
+      const data = await dispatch(fetchCities(cities));
+      setCurrentCity(cities[0]);
+    };
+
+    fetchCitiesData();
   }, [dispatch]);
 
   return (
@@ -35,7 +41,7 @@ const Home = () => {
         <div className="cards_wrapper">
           {weatherData.map((weather, index) => (
             <div className="card" key={index}>
-              <Card city={'Kinshasa'} weather={weather} />
+              <Card city={cities[index]} weather={weather} />
             </div>
           ))}
         </div>
