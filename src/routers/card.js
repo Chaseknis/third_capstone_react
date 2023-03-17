@@ -21,14 +21,16 @@ const Card = () => {
     <div className="card_details_wrapper">
       {weather && (
         <div>
-          <div className="card_image_wrapper">
-            <img src={`${weather.iconURL}`} alt="weather_icon" />
-            <small>{weather.description}</small>
+          <div className="image_and_icon_wrapper">
+            <div className="card_image_wrapper">
+              <img src={`${weather.iconURL}`} alt="weather_icon" />
+              <small>{weather.description}</small>
+            </div>
+            <div className="arrow_wrapper">
+              <FontAwesomeIcon icon={faArrowRight} className="arrow_icon white" />
+            </div>
           </div>
-          <div className="arrow_wrapper">
-            <FontAwesomeIcon icon={faArrowRight} className="arrow_icon white" />
-          </div>
-          <div>
+          <div className="card_degrees_wrapper">
             <p>{`${weather.name}, ${weather.country}`}</p>
             <small>{`${weather.temp.toFixed()}°${units === 'metric' ? 'C' : 'F'}`}</small>
           </div>

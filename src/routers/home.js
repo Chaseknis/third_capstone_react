@@ -25,8 +25,20 @@ const Home = () => {
                   Weather App
                 </h1>
               </div>
-              <small className="small_title p-r-10">Forecast by City</small>
+              <h2 className="small_title p-r-10">Forecast by City</h2>
               <div className="cards_wrapper">
+                <div className="card">
+                  <Card />
+                </div>
+                <div className="card">
+                  <Card />
+                </div>
+                <div className="card">
+                  <Card />
+                </div>
+                <div className="card">
+                  <Card />
+                </div>
                 <div className="card">
                   <Card />
                 </div>
