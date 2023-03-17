@@ -1,15 +1,10 @@
 const API_KEY = '4ffefc847431048ee9271c1ac89e9ad2';
-const LONGITUDE = '-96.808891';
-const LATITUDE = '32.779167';
 
 const generateIconUrl = (iconId) => `https://www.openweathermap.org/img/wn/${iconId}@2x.png`;
 
 const getWeatherData = async (city, units = 'metric') => {
-  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&appid=${API_KEY}&units=${units}`;
-  const data = await fetch(URL)
-    .then((res) => res.json())
-    .then((data) => data);
-  console.log(data);
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=${units}`;
+  const data = await fetch(URL).then((res) => res.json());
 
   const {
     weather,
@@ -51,4 +46,4 @@ const getWeatherData = async (city, units = 'metric') => {
   };
 };
 
-export { getWeatherData };
+export default getWeatherData;

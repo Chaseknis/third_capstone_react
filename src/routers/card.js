@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './styles/card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { getWeatherData } from '../redux/weatherDetails/weatherDetailsSlice';
+import getWeatherData from '../redux/api/api';
 
 const Card = () => {
   const [weather, setWeather] = useState(null);
@@ -12,6 +12,7 @@ const Card = () => {
     const fetchWeatherData = async () => {
       const data = await getWeatherData('paris', units);
       setWeather(data);
+      setUnits(units);
     };
 
     fetchWeatherData();

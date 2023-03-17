@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Card from './card';
 import './styles/home.css';
-import { getWeatherData } from '../redux/weatherDetails/weatherDetailsSlice';
+import getWeatherData from '../redux/api/api';
 
 const Home = () => {
   const [weather, setWeather] = useState(null);
@@ -30,40 +30,6 @@ const Home = () => {
                 <div className="card">
                   <Card />
                 </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-                <div className="card">
-                  <Card />
-                </div>
-
               </div>
             </div>
 
