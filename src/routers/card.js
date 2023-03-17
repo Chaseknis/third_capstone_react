@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import './styles/card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -39,6 +40,10 @@ const Card = ({ city }) => {
       )}
     </div>
   );
+};
+
+Card.propTypes = {
+  city: PropTypes.string.isRequired,
 };
 
 export default Card;

@@ -1,35 +1,39 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import Card from './card';
 import './styles/home.css';
-import { useDispatch, useSelector } from 'react-redux';
 import { fetchCities, selectCitiesData } from '../redux/cities/citiesSlice';
 
-const cities = [
-  'paris',
-  'london',
-  'new york',
-  'tokyo',
-  'new jersey',
-  'birmingham',
-  'los angeles',
-  'sydney',
-  'toronto',
-  'manchester',
-];
-
 const Home = () => {
+  const cities = [
+    'paris',
+    'london',
+    'new york',
+    'tokyo',
+    'new jersey',
+    'birmingham',
+    'los angeles',
+    'sydney',
+    'toronto',
+    'manchester',
+  ];
+
   const dispatch = useDispatch();
   const weatherData = useSelector(selectCitiesData);
-  const [currentCity, setCurrentCity] = useState('Kinshasa');
 
   useEffect(() => {
     const fetchCitiesData = async () => {
-      const data = await dispatch(fetchCities(cities));
-      setCurrentCity(cities[0]);
+      await dispatch(fetchCities(cities));
     };
 
     fetchCitiesData();
   }, [dispatch]);
+
+  const getData = (e) => {
+    console.log(e.target.parentElement);
+  };
 
   return (
     <main>
@@ -40,9 +44,22 @@ const Home = () => {
         <h2 className="small_title p-r-10">Forecast by City</h2>
         <div className="cards_wrapper">
           {weatherData.map((weather, index) => (
-            <div className="card" key={index}>
-              <Card city={cities[index]} weather={weather} />
-            </div>
+            <Link to="/details" key={uuidv4()}>
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={getData}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    getData();
+                  }
+                }}
+                className="card"
+                style={{ color: 'black' }}
+              >
+                <Card city={cities[index]} weather={weather} />
+              </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -51,4 +68,3 @@ const Home = () => {
 };
 
 export default Home;
-

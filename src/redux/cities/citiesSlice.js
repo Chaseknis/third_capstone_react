@@ -25,17 +25,20 @@ export const citiesSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchCities.pending, (state) => {
-        state.status = 'loading';
-      })
-      .addCase(fetchCities.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.citiesData = action.payload;
-      })
-      .addCase(fetchCities.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.error.message;
-      });
+      .addCase(fetchCities.pending, (state) => ({
+        ...state,
+        status: 'loading',
+      }))
+      .addCase(fetchCities.fulfilled, (state, action) => ({
+        ...state,
+        status: 'succeeded',
+        citiesData: action.payload,
+      }))
+      .addCase(fetchCities.rejected, (state, action) => ({
+        ...state,
+        status: 'failed',
+        error: action.error.message,
+      }));
   },
 });
 
