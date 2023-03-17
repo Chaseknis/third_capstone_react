@@ -4,6 +4,7 @@ import getWeatherData from '../api/api';
 export const fetchCities = createAsyncThunk(
   'cities/fetchCities',
   async (cityNames) => {
+    // console.log(cityNames);
     const citiesData = await Promise.all(
       cityNames.map(async (cityName) => {
         const weatherData = await getWeatherData(cityName);

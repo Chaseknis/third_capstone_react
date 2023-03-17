@@ -100,7 +100,7 @@ const Details = () => {
               <FontAwesomeIcon icon={faWind} className="white p-r-5" />
               Wind Speed:
               {' '}
-              {`${weather.speed}`}
+              {`${weather.speed} ${units === 'metric' ? 'm/s' : 'm/h'}`}
             </div>
             <div className="arrow_wrapper">
               <FontAwesomeIcon icon={faArrowRight} className="arrow_icon white" />

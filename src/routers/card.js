@@ -4,19 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import getWeatherData from '../redux/api/api';
 
-const Card = () => {
+const Card = ({ city }) => {
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState('metric');
 
   useEffect(() => {
     const fetchWeatherData = async () => {
-      const data = await getWeatherData('paris', units);
+      const data = await getWeatherData(city, units);
       setWeather(data);
       setUnits(units);
     };
 
     fetchWeatherData();
-  }, []);
+  }, [city, units]);
 
   return (
     <div className="card_details_wrapper">
