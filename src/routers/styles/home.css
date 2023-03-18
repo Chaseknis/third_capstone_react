@@ -46,3 +46,29 @@ main {
   text-decoration: none;
   list-style: none;
 }
+
+.filter_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 1rem 10px;
+}
+
+.filter_wrapper input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+.filter_wrapper input::placeholder {
+  font-size: 12px;
+}
+
+.search_button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
+}
