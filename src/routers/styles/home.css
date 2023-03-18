@@ -1,0 +1,74 @@
+main {
+  background-image: linear-gradient(-25deg, #e26846 0%, #ef8365 100%);
+  padding-bottom: 2rem;
+}
+
+.home_wrapper {
+  margin: 0;
+}
+
+.header_wrapper {
+  display: flex;
+  background-image: linear-gradient(-25deg, rgba(226, 104, 70, 0.588) 0%, rgba(239, 131, 101, 0.634) 100%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_fVg_3GbTo4q3K04hh3zXTOPpMLo9jrncZG8I4LK&s);
+}
+
+.small_title {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.p-r-10 {
+  padding: 0 10px;
+}
+
+.cards_wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
+}
+
+.card:nth-child(2),
+.card:nth-child(3),
+.card:nth-child(6),
+.card:nth-child(7),
+.card:nth-child(10),
+.card:nth-child(11) {
+  background-color: rgba(177, 177, 177, 0.4);
+}
+
+:link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.filter_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 1rem 10px;
+}
+
+.filter_wrapper input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+.filter_wrapper input::placeholder {
+  font-size: 12px;
+}
+
+.search_button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
+}
