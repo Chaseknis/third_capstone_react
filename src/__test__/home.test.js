@@ -80,7 +80,7 @@ describe('Home component', () => {
 
     render(<Home />);
 
-    expect(dispatch).toHaveBeenCalledWith(fetchCities(expect.arrayContaining(cities)));
+    expect(dispatch).toHaveBeenCalledWith(fetchCities(cities));
   });
 
   test('matches snapshot', () => {
