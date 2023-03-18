@@ -80,8 +80,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Click here for a reprentation video](https://www.loom.com/share/f9829be25e1d4c2896ce3fa60d635250)
+
 
 - [Live Demo Link](https://Chaseknis.github.io/third_capstone_react)
+
+<img width="391" alt="Screenshot 2023-03-18 at 16 25 21" src="https://user-images.githubusercontent.com/97366651/226112136-382df0d7-eded-432e-b86c-a9719d44e889.png">
+<img width="382" alt="Screenshot 2023-03-18 at 16 27 25" src="https://user-images.githubusercontent.com/97366651/226112202-4704f743-6254-4d29-8a09-2d6161453fba.png">
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
