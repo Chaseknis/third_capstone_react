@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component Details component 1`] = `
+<main>
+  <div
+    className="home_wrapper"
+  >
+    <div
+      className="header_wrapper p-r-10"
+    >
+      <h1>
+        Weather App
+      </h1>
+    </div>
+    <h2
+      className="small_title p-r-10"
+    >
+      Forecast by City
+    </h2>
+    <div
+      className="filter_wrapper"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Enter City Name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="cards_wrapper"
+    />
+  </div>
+</main>
+`;

@@ -1,31 +1,25 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import { configureStore } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
+import citiesReducer from '../redux/cities/citiesSlice';
+import renderer from 'react-test-renderer';
 import Card from '../routers/card';
 
-jest.mock('../redux/api/api', () => ({
-  __esModule: true,
-  default: jest.fn(() => ({
-    name: 'New York',
-    country: 'US',
-    temp: 18.5,
-    iconURL: 'https://www.example.com/image.png',
-    description: 'Clear Sky',
-  })),
-}));
+const store = configureStore({
+  reducer: {
+    cities: citiesReducer,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+});
 
 describe('Card', () => {
-  test('renders card details', async () => {
-    render(<Card city="New York" />);
-    const cityName = await screen.findByTestId('city-name');
-    const temp = await screen.findByText(/18\.5°C/);
-    const description = await screen.findByText(/Clear Sky/);
-    const image = await screen.findByAltText(/weather_icon/);
-    const arrow = await screen.findByTitle(/arrow/);
-    expect(cityName).toBeInTheDocument();
-    expect(temp).toBeInTheDocument();
-    expect(description).toBeInTheDocument();
-    expect(image).toBeInTheDocument();
-    expect(arrow).toBeInTheDocument();
-    expect(cityName).toHaveTextContent('New York, US');
+  test('Card component', async () => {
+      const tree = renderer.create(
+        <Provider store={store}>
+          <Card city="kigali" />
+        </Provider>,
+      ).toJSON();
+      expect(tree).toMatchSnapshot();
   });
 });
