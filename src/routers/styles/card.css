@@ -19,10 +19,10 @@
 }
 
 .card_image_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .card_image_wrapper img {
@@ -30,21 +30,19 @@
 }
 
 .image_and_icon_wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .card_degrees_wrapper p {
-    font-weight: 700;
-    padding-top: 5px;
-
-} 
-.home_wrapper h2 {
-    color: black;
-    font-style: italic;
-    font-size: 16px;
-    font-weight: 700;
-
+  font-weight: 700;
+  padding-top: 5px;
 }
 
+.home_wrapper h2 {
+  color: black;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 700;
+}
