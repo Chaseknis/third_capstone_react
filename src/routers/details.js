@@ -31,7 +31,6 @@ const Details = () => {
       }
     };
     fetchWeatherData();
-    console.log(city);
   }, []);
 
   if (error) {
