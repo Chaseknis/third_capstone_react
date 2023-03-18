@@ -29,12 +29,12 @@
 # 📖<a name="about-project">Movie APP</a>
 
 
-***In this activity you will set up a movies display app using Javascript with API. This project has webpack installed and uses ES6 features.***
+***This is a react.js weather SPA using openweathermap.org API to display cities weather and give detailed data of every city.***
 
 
-## 🛠 Built With <a name="built-with">Vscode, Github, Movies API</a>
+## 🛠 Built With <a name="built-with">Vscode, Github, openweathermap.org API</a>
 
-### <a name="tech-stack">HTML/CSS, Javascript, Webpack, API</a>
+### <a name="tech-stack">React.js, jest Testing Library and API</a>
 
 
 <details>
@@ -46,7 +46,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
 </details>
 
@@ -71,7 +71,7 @@
 
 - **[Webpack intergration]()**
 - **[Linters integration]()**
-- **[Functionality with Javascript]()**
+- **[Functionality with React.js]()**
 - **[Jest Testing]()**
 - **[Await and Asynch]()**
 - **[Promises]()**
@@ -81,7 +81,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://chaseknis.github.io/third_capstone_react/dist/)
+- [Live Demo Link](https://Chaseknis.github.io/third_capstone_react)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,7 +89,7 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
-A beginner developer can use this website as a starting point for gaining basic knowledge on how to use APIs in your applictation.
+A developer can use this App as a starting point for how to use a openweathermap.org APIs in your applictation.
 
 ### Prerequisites
 
@@ -98,7 +98,7 @@ In order to run this project you need:
 - NODE
 - ESlint set up
 - Webpack
-- Movies API
+- Weather App
 
 
 
@@ -161,7 +161,7 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors">Innocent N. & Luzinda Douglas</a>
+## 👥 Authors <a name="authors">Innocent N.</a>
 
 
 👤 **Innocent N.**
@@ -172,17 +172,6 @@ To run tests, run the following command:
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> We'll add the following functions to the App.
-
-- [ ] **[Adding and displaying comments]()**
-- [ ] **[Displaying number of likes]()**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -203,7 +192,8 @@ If you like this project... Kindly leave a star ⭐
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We'd like to thank Microverse.
+I'd like to thank Microverse and [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for the amazing design template.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
