@@ -20,17 +20,18 @@ const Details = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const city = JSON.parse(localStorage.getItem('cityname'));
     const fetchWeatherData = async () => {
       try {
-        const data = await getWeatherData('paris', units);
+        const data = await getWeatherData(city, units);
         setWeather(data);
         setUnits(units);
       } catch (error) {
         setError(error.message);
       }
     };
-
     fetchWeatherData();
+    console.log(city);
   }, []);
 
   if (error) {

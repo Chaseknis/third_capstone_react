@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 import Card from './card';
 import './styles/home.css';
 import { fetchCities, selectCitiesData } from '../redux/cities/citiesSlice';
@@ -31,8 +31,8 @@ const Home = () => {
     fetchCitiesData();
   }, [dispatch]);
 
-  const getData = (e) => {
-    console.log(e.target.parentElement);
+  const getData = async (cityname) => {
+    localStorage.setItem('cityname', JSON.stringify(cityname));
   };
 
   return (
@@ -46,15 +46,15 @@ const Home = () => {
           {weatherData.map((weather, index) => (
             <Link to="/details" key={uuidv4()}>
               <div
+                className="card"
                 role="button"
                 tabIndex={0}
-                onClick={getData}
+                onClick={() => getData(weather.name)}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     getData();
                   }
                 }}
-                className="card"
                 style={{ color: 'black' }}
               >
                 <Card city={cities[index]} weather={weather} />
