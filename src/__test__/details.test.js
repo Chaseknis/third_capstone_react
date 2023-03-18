@@ -3,9 +3,9 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { BrowserRouter as Router } from 'react-router-dom';
 import logger from 'redux-logger';
-import citiesReducer from '../redux/cities/citiesSlice';
 import renderer from 'react-test-renderer';
-import Details from '../routers/details'
+import citiesReducer from '../redux/cities/citiesSlice';
+import Details from '../routers/details';
 
 const store = configureStore({
   reducer: {
